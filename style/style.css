@@ -1,6 +1,10 @@
 /* home section start */
+body{
+    background-color: wheat;
+}
 main{
     background-color: #0F3C33;
+    margin: 0% 20%;
 }
 .navbar{
     background-color: #0F3C33;
@@ -13,21 +17,6 @@ main{
 }
 .logo:hover{
     transform: rotateY(360deg);
-}
-.col{
-    margin-top: 5%;
-    padding-bottom: 0%;
-}
-.mt-5{
-    padding-top: 15%;
-}
-.profile-intro{
-    text-align: start;
-    padding-left: 0%;
-}
-.btn:hover{
-background-color: #0F3C33;
-color: white;
 }
 .navbar{
     justify-content: space-between;
@@ -42,13 +31,39 @@ transition: all 0.2s;
     border-bottom: 1px solid goldenrod;
     padding-left: 0;
 }
+.col{
+    margin-top: 5%;
+    padding-bottom: 0%;
+}
+.mt-5{
+    padding-top: 15%;
+}
+.profile-intro{
+    text-align: start;
+    padding: 8% 10%;
+}
+.profile-pic-1{
+    width: 100%;
+}
+.btn:hover{
+background-color: #0F3C33;
+color: white;
+}
 /* home section end */
 /* about me section starts */
-#about-section .mt-5{
-    margin-top: 0%;
-    margin-bottom: 1%;
-    padding-top: 0%;
-    color: goldenrod;
+#about-section{
+    width: 100%;
+    text-align: center;
+}
+.about-me{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.about-me-details{
+    width: 100%;
+}
+.about-me-details p{
+    margin-top: 40%;
 }
 /* services section start */
 .services{
@@ -59,7 +74,126 @@ transition: all 0.2s;
 }
 /* services section end */
 /* skills section start */
+#skills-section{
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
 .container-skills{
+    width: 100%;
+    height: 100vh;
+    background: #0F3C33;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -60px;
+    padding-bottom: -50px;
+}
+.skills h4{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: rgb(252, 250, 250);
+    font-size: 36px;
+}
+.progress-bar{
+    background-color: #f7f7f7;
+    width: 1000px;
+    height: 50px;
+    border-radius: 5px;
+}
+.progress-bar div{
+    height: 17px;
+    border-radius: 5px;
+    width: 0%;
+}
+.progress-bar div span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #ffffff;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.data-management{
+    background: goldenrod;
+    animation: data-management 1s linear forwards;
+}
+.graphics{
+    background: goldenrod;
+    animation: graphics 1s linear forwards;
+}
+.web-design{
+    background: goldenrod;
+    animation: web-design 1s linear forwards;
+}
+.editing{
+    background: goldenrod;
+    animation: editing 1s linear forwards;
+}
+.animation{
+    background: goldenrod;
+    animation: animation 1s linear forwards;
+}
+.digital-marketing{
+    background: goldenrod;
+    animation: digital-marketing 1s linear forwards;
+}
+.data-management span{
+    border: 1px solid #e91e63;
+}
+.graphics span{
+    border: 1px solid #e91e63;
+}
+.web-design span{
+    border: 1px solid #e91e63;
+}
+.editing span{
+    border: 1px solid #e91e63;
+}
+.animation span{
+    border: 1px solid #e91e63;
+}
+.digital-marketing span{
+    border: 1px solid #e91e63;
+}
+@keyframes data-management{
+    100%{
+        width: 95%;
+    }
+}
+@keyframes graphics{
+    100%{
+        width: 97%;
+    }
+}
+@keyframes web-design{
+    100%{
+        width: 90%;
+    }
+}
+@keyframes editing{
+    100%{
+        width: 85%;
+    }
+}
+@keyframes animation{
+    100%{
+        width: 90%;
+    }
+}
+@keyframes digital-marketing{
+    100%{
+        width: 92%;
+    }
+}
+/* .container-skills{
     width: 100%;
     height: 100vh;
     display: flex;
@@ -174,7 +308,7 @@ transition: all 0.2s;
     100%{
         width: 97%;
     }
-}
+} */
 /* skills section end */
 /* portfolio section start */
 #portfolio-section h1{
