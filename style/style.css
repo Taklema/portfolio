@@ -70,6 +70,7 @@ color: white;
     color: goldenrod;
     font-size: 120%;
     font-weight: 600;
+    text-align: justify;
 }
 /* services section start */
 #services-section{
@@ -93,6 +94,7 @@ color: white;
     align-items: center;
     justify-content: center;
     margin: 10px;
+    box-shadow: 6px 7px 8px #01130a49;
 }
 .box{
     width: 250px;
@@ -270,6 +272,7 @@ color: white;
 figure{
     overflow: hidden;
     margin: 20px 10px;
+    box-shadow: 6px 7px 8px #01130a49;
 }
 .images img{
     display: block;
@@ -312,17 +315,15 @@ figure{
 /* previous-work section starts */
 #previous-work-section{
     color: white;
-    margin-top: 20%;
-    margin-bottom: 10%;
+    margin: 20% 0% 10% 0%;
 }
 .works{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 6%;
 }
 .works .card{
     background-color: #0F3C33;
-    box-shadow: 10px 10px 8px #01130a;
+    box-shadow: 6px 7px 8px #01130a49;
 }
 .works .card img{
     width: 100%;
