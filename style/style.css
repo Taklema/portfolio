@@ -8,10 +8,12 @@ main{
 .logo{
     width: 75px;
     height: 75px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
-/* .name-logo{
-    color: #D8A525;
-} */
+.logo:hover{
+    transform: rotateY(360deg);
+}
 .col{
     margin-top: 5%;
     padding-bottom: 0%;
@@ -175,15 +177,19 @@ transition: all 0.2s;
 }
 /* skills section end */
 /* portfolio section start */
+#portfolio-section h1{
+    color: white;
+}
 .images{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     float: left;
+    padding: 50px 15px;
 }
 figure{
     overflow: hidden;
-    margin: 0 10px;
+    margin: 20px 10px;
 }
 .images img{
     display: block;
@@ -198,20 +204,12 @@ figure{
 .images #zoom-in:hover img{
   transform: scale(1.5);  
 }
-/* .images img{
-    width: 30vw;
-    height: 20vw;
-    transition: all 1.4s ease;
-}
-.img:hover{
-    transform: scale(1.14);
-} */
-
 .images2{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     float: left;
+    padding: 50px 15px;
 }
 figure{
     overflow: hidden;
@@ -230,21 +228,47 @@ figure{
 .images2 #zoom-in:hover img{
   transform: scale(1.5);  
 }
-
-
-/* .images2{
+/* portfolio section end */
+/* previous-work section starts */
+#previous-work-section{
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.works{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    overflow: hidden;
 }
-.images2 img{
-    width: 30vw;
-    height: 20vw;
-    transition: all 1.4s ease;
+.works .card{
+    background-color: #0F3C33;
+    box-shadow: 10px 10px 8px #01130a;
 }
-.img:hover{
-    transform: scale(1.14);
-} */
-/* portfolio section end */
+.works .card:hover{
+    border: 1px solid goldenrod;
+}
 
+/* accordion section starts */
+#accordion-section h1{
+    color: white;
+}
+/* footer section start */
+.footer{
+    background: #0F3C33;
+    height: 350px;
+}
+.footer .footer-item{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    text-align: center;
+    padding-top: 50px;
+}
+.footer .footer-item .contact p{
+    color: #ffffff;
+}
+hr{
+    color: #f7f7f7;
+}
+.social-icon img{
+    width: 40px;
+}
